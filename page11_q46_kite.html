@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="he" dir="rtl">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>שאלה 46 - דלתון/עפיפון</title>
+<title>Question 46 - Kite</title>
 <style>
   :root {
     --bg: #ffffff;
@@ -420,147 +420,156 @@
     cursor: not-allowed;
     opacity: 0.7;
   }
+
+  footer {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    padding: 20px;
+  }
 </style>
 </head>
 <body>
 
 <div class="container">
-  <div class="title">שאלה 46 - עמוד 11</div>
-  <div class="subtitle">דלתון (עפיפון) עם זוויות ישרות</div>
+  <div class="title">Question 46 - Page 11</div>
+  <div class="subtitle">Kite with Right Angles</div>
 
-  <div class="progress-text">התקדמות: <span id="progressCount">0</span> מתוך 5 שלבים</div>
+  <div class="progress-text">Progress: <span id="progressCount">0</span> out of 5 steps</div>
   <div class="progress-bar">
     <div class="progress-fill" id="progressFill"></div>
   </div>
 
   <!-- Original question image from SVG -->
   <div class="question-image" style="display: flex; justify-content: center; margin: 20px 0; background: white; border-radius: 12px; padding: 15px; border: 2px solid var(--purple);">
-    <img src="page_11_q_46.svg" alt="שאלה 46 - דלתון" style="max-width: 100%; height: auto;">
+    <img src="page_11_q_46.svg" alt="Question 46 - Kite" style="max-width: 100%; height: auto;">
   </div>
 
   <div class="exercise">
     <div class="given-box">
-      <strong>נתון:</strong><br><br>
+      <strong>Given:</strong><br><br>
       <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
-        <span class="formula">∠A₁ = ∠A₂</span>
-        <span class="formula">AB ⊥ BC</span>
-        <span class="formula">AD ⊥ DC</span>
+        <span class="formula">&ang;A&#x2081; = &ang;A&#x2082;</span>
+        <span class="formula">AB &perp; BC</span>
+        <span class="formula">AD &perp; DC</span>
       </div>
       <br>
       <span style="font-size: 16px; color: #666;">
-        (AC חוצה את זווית A, והזוויות ב-B וב-D הן זוויות ישרות)
+        (AC bisects angle A, and the angles at B and D are right angles)
       </span>
     </div>
 
-    <!-- Part א - Prove congruence -->
-    <div class="section-title">א. הוכיחו: ΔABC ≅ ΔADC</div>
+    <!-- Part a - Prove congruence -->
+    <div class="section-title">a. Prove: &Delta;ABC &cong; &Delta;ADC</div>
 
     <!-- Step 1 -->
     <div class="proof-step" id="step-1">
-      <div class="step-title">שלב 1: זיהוי הזוויות הישרות</div>
-      <p>מהנתון AB ⊥ BC ו-AD ⊥ DC, מה ערך הזוויות?</p>
+      <div class="step-title">Step 1: Identifying the right angles</div>
+      <p>From the given AB &perp; BC and AD &perp; DC, what are the angle values?</p>
       <div class="input-row">
-        <span>∠ABC = </span>
+        <span>&ang;ABC = </span>
         <input type="text" class="answer-input" id="angle-abc" placeholder="?" maxlength="3">
-        <span>°</span>
+        <span>&deg;</span>
         <span style="margin: 0 15px;">&nbsp;</span>
-        <span>∠ADC = </span>
+        <span>&ang;ADC = </span>
         <input type="text" class="answer-input" id="angle-adc" placeholder="?" maxlength="3">
-        <span>°</span>
-        <button class="check-btn" onclick="checkStep1()">בדוק</button>
+        <span>&deg;</span>
+        <button class="check-btn" onclick="checkStep1()">Check</button>
       </div>
       <div class="hint-box" id="hint-1"></div>
-      <div class="success-msg" id="success-1">נכון! שתי הזוויות הן 90°</div>
+      <div class="success-msg" id="success-1">Correct! Both angles are 90&deg;</div>
     </div>
 
     <!-- Step 2 -->
     <div class="proof-step" id="step-2">
-      <div class="step-title">שלב 2: זיהוי היתר המשותף</div>
-      <p>שני המשולשים הם ישרי-זווית. מהו היתר המשותף?</p>
+      <div class="step-title">Step 2: Identifying the common hypotenuse</div>
+      <p>Both triangles are right triangles. What is the common hypotenuse?</p>
       <div class="input-row">
-        <span>היתר המשותף: </span>
+        <span>Common hypotenuse: </span>
         <input type="text" class="answer-input" id="hypotenuse" placeholder="??" maxlength="2" style="text-transform: uppercase;">
-        <button class="check-btn" onclick="checkStep2()">בדוק</button>
+        <button class="check-btn" onclick="checkStep2()">Check</button>
       </div>
       <div class="hint-box" id="hint-2"></div>
-      <div class="success-msg" id="success-2">נכון! AC הוא היתר המשותף</div>
+      <div class="success-msg" id="success-2">Correct! AC is the common hypotenuse</div>
     </div>
 
     <!-- Step 3 -->
     <div class="proof-step" id="step-3">
-      <div class="step-title">שלב 3: זיהוי הזווית החדה השווה</div>
-      <p>מהנתון ∠A₁ = ∠A₂, מה הזוויות השוות במשולשים?</p>
+      <div class="step-title">Step 3: Identifying the equal acute angle</div>
+      <p>From the given &ang;A&#x2081; = &ang;A&#x2082;, what are the equal angles in the triangles?</p>
       <div class="input-row">
-        <span>∠BAC = ∠</span>
+        <span>&ang;BAC = &ang;</span>
         <input type="text" class="answer-input" id="acute-angle" placeholder="???" maxlength="3" style="text-transform: uppercase;">
-        <button class="check-btn" onclick="checkStep3()">בדוק</button>
+        <button class="check-btn" onclick="checkStep3()">Check</button>
       </div>
       <div class="hint-box" id="hint-3"></div>
-      <div class="success-msg" id="success-3">נכון! ∠BAC = ∠DAC (או ∠CAD)</div>
+      <div class="success-msg" id="success-3">Correct! &ang;BAC = &ang;DAC (or &ang;CAD)</div>
     </div>
 
     <!-- Step 4 -->
     <div class="proof-step" id="step-4">
-      <div class="step-title">שלב 4: בחירת משפט החפיפה</div>
-      <p>יש לנו משולשים ישרי-זווית עם יתר משותף וזווית חדה שווה.</p>
-      <p>מהו משפט החפיפה המתאים?</p>
+      <div class="step-title">Step 4: Choosing the congruence theorem</div>
+      <p>We have right triangles with a common hypotenuse and an equal acute angle.</p>
+      <p>What is the appropriate congruence theorem?</p>
       <div class="input-row" style="flex-wrap: wrap;">
-        <button class="choice-btn" onclick="checkStep4('sss', this)">צ.צ.צ (SSS)</button>
-        <button class="choice-btn" onclick="checkStep4('sas', this)">צ.ז.צ (SAS)</button>
-        <button class="choice-btn" onclick="checkStep4('hyp', this)">יתר וזווית חדה</button>
-        <button class="choice-btn" onclick="checkStep4('asa', this)">ז.צ.ז (ASA)</button>
+        <button class="choice-btn" onclick="checkStep4('sss', this)">SSS</button>
+        <button class="choice-btn" onclick="checkStep4('sas', this)">SAS</button>
+        <button class="choice-btn" onclick="checkStep4('hyp', this)">Hypotenuse-Acute Angle</button>
+        <button class="choice-btn" onclick="checkStep4('asa', this)">ASA</button>
       </div>
       <div class="hint-box" id="hint-4"></div>
-      <div class="success-msg" id="success-4">מעולה! יתר וזווית חדה הוא המשפט הנכון!</div>
+      <div class="success-msg" id="success-4">Excellent! Hypotenuse-Acute Angle is the correct theorem!</div>
       <div class="explanation-box" id="explain-4">
-        <b>סיכום ההוכחה:</b><br>
-        • ∠ABC = 90° ו-∠ADC = 90° (זוויות ישרות מהנתון)<br>
-        • AC היא יתר משותף בשני משולשים ישרי-זווית<br>
-        • ∠BAC = ∠DAC (כי ∠A₁ = ∠A₂, AC חוצה את זווית A)<br>
-        לכן לפי <b>יתר וזווית חדה</b> → <b>ΔABC ≅ ΔADC</b>
+        <b>Proof summary:</b><br>
+        &bull; &ang;ABC = 90&deg; and &ang;ADC = 90&deg; (right angles from the given)<br>
+        &bull; AC is the common hypotenuse in both right triangles<br>
+        &bull; &ang;BAC = &ang;DAC (since &ang;A&#x2081; = &ang;A&#x2082;, AC bisects angle A)<br>
+        Therefore by <b>Hypotenuse-Acute Angle</b> &rarr; <b>&Delta;ABC &cong; &Delta;ADC</b>
       </div>
     </div>
 
-    <!-- Part ב - Prove AB = AD -->
-    <div class="section-title">ב. הוכיחו: AB = AD</div>
+    <!-- Part b - Prove AB = AD -->
+    <div class="section-title">b. Prove: AB = AD</div>
 
     <div class="question-item" id="q-b">
       <div class="question-header">
-        <div class="question-letter">ב</div>
-        <div class="question-text">מהחפיפה שהוכחנו, האם נכון ש-AB = AD?</div>
+        <div class="question-letter">b</div>
+        <div class="question-text">From the congruence we proved, is it true that AB = AD?</div>
       </div>
 
       <p style="text-align: center;">
-        במשולשים חופפים, צלעות מתאימות שוות.<br>
-        מהחפיפה ΔABC ≅ ΔADC, האם AB מתאימה ל-AD?
+        In congruent triangles, corresponding sides are equal.<br>
+        From the congruence &Delta;ABC &cong; &Delta;ADC, does AB correspond to AD?
       </p>
 
       <div class="input-row">
-        <button class="tf-btn true-btn" onclick="checkPartB(true, this)">כן, נכון</button>
-        <button class="tf-btn false-btn" onclick="checkPartB(false, this)">לא, לא נכון</button>
+        <button class="tf-btn true-btn" onclick="checkPartB(true, this)">Yes, correct</button>
+        <button class="tf-btn false-btn" onclick="checkPartB(false, this)">No, incorrect</button>
       </div>
 
       <div class="hint-box" id="hint-b"></div>
-      <div class="success-msg" id="success-b">נכון! AB = AD כי הן צלעות מתאימות במשולשים חופפים!</div>
+      <div class="success-msg" id="success-b">Correct! AB = AD because they are corresponding sides in congruent triangles!</div>
       <div class="explanation-box" id="explain-b">
-        מהחפיפה ΔABC ≅ ΔADC:<br>
-        ההתאמה היא: A↔A, B↔D, C↔C<br>
-        לכן הצלעות המתאימות:<br>
-        • <b>AB = AD</b> (צלעות ראשונות)<br>
-        • BC = DC (צלעות שניות)<br>
-        • AC = AC (צלעות שלישיות - משותפות)<br><br>
-        <b>מסקנה: AB = AD</b>
+        From the congruence &Delta;ABC &cong; &Delta;ADC:<br>
+        The correspondence is: A&harr;A, B&harr;D, C&harr;C<br>
+        Therefore the corresponding sides are:<br>
+        &bull; <b>AB = AD</b> (first sides)<br>
+        &bull; BC = DC (second sides)<br>
+        &bull; AC = AC (third sides - shared)<br><br>
+        <b>Conclusion: AB = AD</b>
       </div>
     </div>
 
   </div>
 
   <div class="final-celebration" id="finalCelebration">
-    <h2>כל הכבוד! סיימת את השאלה!</h2>
+    <h2>Well done! You finished the question!</h2>
     <div style="font-size: 20px; color: #166534;">
-      הבנת איך להוכיח חפיפת משולשים ישרי-זווית ולמצוא צלעות שוות!
+      You understood how to prove right-triangle congruence and find equal sides!
     </div>
   </div>
+
+  <footer>&copy; Developed by Shir Sivroni</footer>
 
 </div>
 
@@ -568,11 +577,11 @@
 
 <script>
 const hints = {
-  '1': ['רמז: אם AB ניצב ל-BC, מה הזווית ביניהם?', 'רמז: ניצב = זווית ישרה = ?°'],
-  '2': ['רמז: היתר הוא הצלע מול הזווית הישרה', 'רמז: מי הצלע מול הזוויות הישרות B ו-D?'],
-  '3': ['רמז: AC חוצה את זווית A', 'רמז: ∠A₁ = ∠A₂ אומר ש-∠BAC = ∠...'],
-  '4': ['רמז: יש לנו יתר משותף וזווית חדה שווה', 'רמז: זה משפט חפיפה למשולשים ישרי-זווית'],
-  'b': ['רמז: בחפיפה ΔABC ≅ ΔADC, מה ההתאמה?', 'רמז: A↔A, B↔D, C↔C']
+  '1': ['Hint: If AB is perpendicular to BC, what is the angle between them?', 'Hint: Perpendicular = right angle = ?°'],
+  '2': ['Hint: The hypotenuse is the side opposite the right angle', 'Hint: Which side is opposite the right angles at B and D?'],
+  '3': ['Hint: AC bisects angle A', 'Hint: ∠A₁ = ∠A₂ means that ∠BAC = ∠...'],
+  '4': ['Hint: We have a common hypotenuse and an equal acute angle', 'Hint: This is a congruence theorem for right triangles'],
+  'b': ['Hint: In the congruence ΔABC ≅ ΔADC, what is the correspondence?', 'Hint: A↔A, B↔D, C↔C']
 };
 
 let attempts = { '1': 0, '2': 0, '3': 0, '4': 0, 'b': 0 };
